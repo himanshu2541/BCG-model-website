@@ -9,8 +9,9 @@ function Benefits() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Text Content */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
-            All the benefits of an agency, 40% lower cost.
+          <h2 className="text-3xl md:text-4xl font-bold  text-heading mb-4 text-black">
+            <p className="text-black">All the benefits of an agency, 40% lower cost.</p>
+            
           </h2>
           <p className="text-body mb-8 max-w-md">
             Unlike agencies’ 50% markup, Clara charges a low 15% fee for
@@ -19,9 +20,9 @@ function Benefits() {
 
           {/* Stats */}
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
-            <StatCard value="780" label="Caregivers" />
-            <StatCard value="7.7" label="Avg H5 Exp" />
-            <StatCard value="$32.33" label="Avg Cost" />
+            <StatCard value={<span className="text-black">780</span>} label="Caregivers" />
+            <StatCard value={<span className="text-black">7.7</span>} label="Avg H5 Exp" />
+            <StatCard value={<span className="text-black">$32.33</span>} label="Avg Cost" />
           </div>
         </div>
 

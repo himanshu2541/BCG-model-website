@@ -8,23 +8,23 @@ function Hero() {
   return (
     <section className="bg-accent py-12 md:py-20">
       <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
-        
+
         {/* Text Content */}
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <h1 className="text-3xl md:text-5xl font-normal font-tertiary text-heading mb-4">
-            Quality in-home care for less than $35 per hour
+            Trusted In-Home Care
           </h1>
           <p className="text-body mb-8 max-w-lg">
-            Clara uses modern technology to help families find and hire
+            Nurture Lane uses modern technology to help families find and hire
             their ideal caregiver for an affordable price.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90">
-              Find a caregiver
+            <button className="bg-gray-900 text-white px-6 py-3 font-bold rounded-md hover:bg-gray-7all00">
+              Book Your Free Trial
             </button>
-            <button className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary/10">
+            {/* <button className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-800">
               Apply for a care job
-            </button>
+            </button> */}
           </div>
         </div>
 

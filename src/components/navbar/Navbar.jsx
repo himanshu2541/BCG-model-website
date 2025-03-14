@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/logo2.png"
 // Navigation links defined as an array of objects
 const navLinks = [
   { title: "Home", to: "/" },
@@ -48,10 +48,11 @@ const Navbar = () => {
 
   return (
     <nav ref={navRef} className="bg-accent font-secondary">
-      <div className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="container mx-auto pr-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-xl font-bold text-primary">
-          <Link to="/">Logo</Link>
+        <div className="text-xl font-bold text-primary px-6 py-2">
+          <Link to="../../../assets/logo2.png"><img src={logo} alt="A beautiful scenery" width="60" height="60" />
+          </Link>
         </div>
 
         {/* Navigation Links */}
