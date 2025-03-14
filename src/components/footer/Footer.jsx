@@ -8,11 +8,11 @@ const footerColumns = [
   {
     heading: "Services",
     links: [
-      { label: "How Clara works", to: "/how-clara-works" },
-      { label: "How Clara Payroll works", to: "/how-clara-payroll-works" },
-      { label: "Clara for Caregivers", to: "/clara-for-caregivers" },
+      { label: "How Nurture works", to: "/how-nurture-works" },
+      { label: "How Nurture Payroll works", to: "/how-nurture-payroll-works" },
+      { label: "Nurture for Caregivers", to: "/nurture-for-caregivers" },
       { label: "Commitment to safety", to: "/commitment-to-safety" },
-      { label: "Ask Clara", to: "/ask-clara" },
+      { label: "Ask Nurture", to: "/ask-nurture" },
     ],
   },
   {
@@ -91,10 +91,10 @@ function Footer() {
           {/* Bottom Section: Legal Note & Copyright */}
           <div className="mt-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-body text-sm">
-              Brand Home Care, Inc. is a referral agency
+              Nurture Home Care, Inc. is a referral agency
             </div>
             <div className="text-body text-sm">
-              © Brand 2025 - All Rights Reserved
+              © Nurture 2025 - All Rights Reserved
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ function Benefits() {
             All the benefits of an agency, 40% lower cost.
           </h2>
           <p className="text-body mb-8 max-w-md">
-            Unlike agencies’ 50% markup, Clara charges a low 15% fee for
+            Unlike agencies’ 50% markup, Nurture charges a low 15% fee for
             full-service access.
           </p>
 

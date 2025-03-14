@@ -5,7 +5,7 @@ import React from "react";
 const features = [
   {
     title: "Quality caregivers",
-    description: "Brand’s >95% vetted, background-checked caregivers are providing thousands of hours of care/month.",
+    description: "Nurture’s >95% vetted, background-checked caregivers are providing thousands of hours of care/month.",
     icon: "/placeholder-icon.png", // Replace with real icon
   },
   {
@@ -15,22 +15,22 @@ const features = [
   },
   {
     title: "Care ASAP",
-    description: "Depending on your needs, Clara can get a caregiver in place in as little as 24 hours.",
+    description: "Depending on your needs, Nurture can get a caregiver in place in as little as 24 hours.",
     icon: "/placeholder-icon.png",
   },
   {
     title: "Dedicated support",
-    description: "Clara is available 7 days/week to provide coverage in all situations.",
+    description: "Nurture is available 7 days/week to provide coverage in all situations.",
     icon: "/placeholder-icon.png",
   },
   {
     title: "100% legal and insured",
-    description: "Clara handles all the paperwork seamlessly with automated payroll and insurance.",
+    description: "Nurture handles all the paperwork seamlessly with automated payroll and insurance.",
     icon: "/placeholder-icon.png",
   },
   {
     title: "Payment options",
-    description: "Clara accepts long-term care insurance as well as Veterans benefits to pay for care.",
+    description: "Nurture accepts long-term care insurance as well as Veterans benefits to pay for care.",
     icon: "/placeholder-icon.png",
   },
 ];

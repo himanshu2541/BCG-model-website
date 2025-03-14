@@ -15,7 +15,7 @@ function Hero() {
             Quality in-home care for less than $35 per hour
           </h1>
           <p className="text-body mb-8 max-w-lg">
-            Clara uses modern technology to help families find and hire
+            Nurture uses modern technology to help families find and hire
             their ideal caregiver for an affordable price.
           </p>
           <div className="flex flex-wrap gap-4">
