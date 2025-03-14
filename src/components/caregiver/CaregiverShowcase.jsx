@@ -1,5 +1,7 @@
 import React from "react";
 import Basicsupport from "../../assets/basicsupport.jpg"
+import Specialized from "../../assets/specialized.png"
+import Medical from "../../assets/medical.png"
 // Example data for caregivers.
 // Replace images and text with real data as needed.
 const caregivers = [
@@ -13,19 +15,19 @@ const caregivers = [
   },
   {
     name: "Semi-Medical Care",
-    experience: "6 years of caregiving experience",
-    expertise: "Expertise in 44-hr/week coverage",
+    experience: "Care for seniors needing regular health monitoring and basic medical assistance at home.",
+    expertise: "For Elderly individuals with mild medical.",
     languages: "English, Spanish",
     hourlyRate: "$29.00/hr",
-    image: "/avatar.jpg",
+    image: Specialized,
   },
   {
-    name: "Amelia Liran",
-    experience: "5 years of caregiving experience",
-    expertise: "Expert in 8-hr/day shifts",
+    name: "Specialized Medical Support",
+    experience: "Professional in-home care for seniors with specific medical needs such as dementia, Alzheimer's, post-surgical recovery, or palliative care.",
+    expertise: "For Bedridden patients or elders with chronic illnesses needing specialized attention.",
     languages: "English",
     hourlyRate: "$30.00/hr",
-    image: "/avatar.jpg",
+    image: Medical,
   },
 
 ];

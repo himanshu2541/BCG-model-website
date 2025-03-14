@@ -3,6 +3,7 @@
 import React from "react";
 // import HeroImage from "../assets/hero-image.jpg"; 
 // Replace with your actual image
+import Home from "../assets/homepic2.jpeg"
 
 function Hero() {
   return (
@@ -29,9 +30,9 @@ function Hero() {
         </div>
 
         {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end image-wrapper">
           <img
-            src={'https://framerusercontent.com/images/4gK0HuCpW8x5sfRxHRadQuEiA8.png'}
+            src={Home}
             alt="Caregiver with elderly person"
             className="max-w-full h-auto"
           />
