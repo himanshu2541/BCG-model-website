@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import MaxWidthWrapper from "../MaxWidthWrapper";
-
+import logo from "../../assets/logo2.png"
 // Example data arrays
 const footerColumns = [
   {
@@ -48,9 +48,9 @@ function Footer() {
           {/* Top Section: Logo, Social Icons, and Link Columns */}
           <div className="flex flex-col md:flex-row md:space-x-8 justify-between">
             {/* Left Column: Logo & Social Icons */}
-            <div className="mb-8 md:mb-0">
-              <div className="text-2xl font-bold text-heading mb-4">Logo</div>
-              <div className="flex space-x-4">
+            <div className="mb-8 ">
+              <div className="text-2xl font-bold text-heading "><img src={logo} alt="A beautiful scenery" width="100" height="100" /></div>
+              <div className="flex space-x-4 pt-2">
                 {socialLinks.map((social, index) => (
                   <Link
                     key={index}
