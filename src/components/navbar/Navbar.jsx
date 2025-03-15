@@ -13,13 +13,8 @@ const navLinks = [
     ],
   },
   {
-    title: "Services",
-    to: "/services",
-    dropdown: [
-      { title: "Elderly Care", to: "/services/elderly-care" },
-      { title: "Homehelp", to: "/services/homehelp" },
-      { title: "Child Care", to: "/services/child-care" },
-    ],
+    title: "Availability",
+    to: "/availability",
   },
   { title: "Career", to: "/career" },
 ];

@@ -31,7 +31,7 @@ const caregivers = [
 
 function CaregiverShowcase() {
   return (
-    <section className="bg-[#0D0F1A] text-white py-12 md:py-20 min-h-screen flex items-center justify-center">
+    <section className="bg-[#0D0F1A] text-white py-12 md:py-20 min-h-screen flex items-center justify-center" id="plans">
       <div className="container mx-auto px-4 max-w-[1200px]">
         {/* Small label above the heading */}
         <p className="text-sm uppercase tracking-widest text-center mb-2">

@@ -14,6 +14,7 @@ import Mission from "../components/mission/Mission";
 const Home = () => {
   return (
     <>
+    <div id="home"/>
       <div className="fixed top-0 w-full z-50">
         <Navbar />
       </div>

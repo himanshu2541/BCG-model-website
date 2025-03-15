@@ -34,7 +34,7 @@ function StepsSection() {
   const currentStep = stepsData.find((step) => step.id === activeStep);
 
   return (
-    <section className="py-12 md:py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white" id="features">
       <div className="container mx-auto px-4">
         
         {/* Label above heading */}

@@ -2,33 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import MaxWidthWrapper from "../MaxWidthWrapper";
-import logo from "../../assets/logo2.png"
+import logo from "../../assets/logo2.png";
+
 // Example data arrays
 const footerColumns = [
   {
-    heading: "Services",
+    heading: "Links",
     links: [
-      { label: "How Nurture works", to: "/how-nurture-works" },
-      { label: "How Nurture Payroll works", to: "/how-nurture-payroll-works" },
-      { label: "Nurture for Caregivers", to: "/nurture-for-caregivers" },
-      { label: "Commitment to safety", to: "/commitment-to-safety" },
-      { label: "Ask Nurture", to: "/ask-nurture" },
-    ],
-  },
-  {
-    heading: "Company",
-    links: [
-      { label: "FAQs", to: "/faqs" },
-      { label: "About", to: "/about" },
-      { label: "Resources", to: "/resources" },
-      { label: "Contact", to: "/contact" },
-    ],
-  },
-  {
-    heading: "Legal",
-    links: [
-      { label: "Terms & Conditions", to: "/terms" },
-      { label: "Privacy Policy", to: "/privacy" },
+      { label: "Home", to: "#home" },
+      { label: "Plans", to: "#plans" },
+      { label: "Features", to: "#features" },
+      { label: "Team", to: "#team" },
     ],
   },
 ];
@@ -49,7 +33,9 @@ function Footer() {
           <div className="flex flex-col md:flex-row md:space-x-8 justify-between">
             {/* Left Column: Logo & Social Icons */}
             <div className="mb-8 ">
-              <div className="text-2xl font-bold text-heading "><img src={logo} alt="A beautiful scenery" width="100" height="100" /></div>
+              <div className="text-2xl font-bold text-heading ">
+                <img src={logo} alt="A beautiful scenery" width="100" height="100" />
+              </div>
               <div className="flex space-x-4 pt-2">
                 {socialLinks.map((social, index) => (
                   <Link
@@ -64,8 +50,8 @@ function Footer() {
               </div>
             </div>
 
-            {/* Middle Section: Navigation Columns */}
-            <div className="flex flex-wrap gap-8">
+            {/* Middle Section: Navigation Columns & Contact */}
+            <div className="flex flex-wrap gap-4 md:gap-32">
               {footerColumns.map((column, colIndex) => (
                 <div key={colIndex}>
                   <h3 className="font-semibold text-heading/90 mb-2">
@@ -74,17 +60,26 @@ function Footer() {
                   <ul className="space-y-1">
                     {column.links.map((linkItem, linkIndex) => (
                       <li key={linkIndex}>
-                        <Link
-                          to={linkItem.to}
+                        <a
+                          href={linkItem.to}
                           className="hover:text-primary transition-colors text-sm text-heading/70"
                         >
                           {linkItem.label}
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
+              {/* Contact Section */}
+              <div>
+                <h3 className="font-semibold text-heading/90 mb-2">Contact Us</h3>
+                <ul className="space-y-1 text-sm text-heading/70">
+                  <li>📍 Colaba, South Mumbai, India</li>
+                  <li>📞 +91 63717 85118</li>
+                  <li>✉️ support@nurturecare.com</li>
+                </ul>
+              </div>
             </div>
           </div>
 

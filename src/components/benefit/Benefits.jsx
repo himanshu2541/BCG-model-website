@@ -1,5 +1,6 @@
 import React from "react";
-import benefit_image from "../../assets/elderly-person-wheelchair-caregiver.png"; // Ensure the image is stored in the correct path
+import { FaClock, FaUserCheck, FaHandsHelping } from "react-icons/fa";
+import benefit_image from "../../assets/elderly-person-wheelchair-caregiver.png";
 
 const Benefits = () => {
   return (
@@ -8,20 +9,26 @@ const Benefits = () => {
         <h2 className="text-heading text-4xl font-bold leading-tight">
           Trained & Certified Caregivers, Personalized for You
         </h2>
-        <p className="text-body text-lg">
+        <p className="text-body">
           Our caregivers are professionally trained and certified to provide top-quality in-home care.
         </p>
-        <ul className="space-y-3 text-body text-sm">
-          <li>🔹 24/7 In-Home Care – Our primary service ensures round-the-clock support.</li>
-          <li>🔹 Personalized Plans – Clients can tailor their care plans to meet their specific needs.</li>
-          <li>🔹 Special Preferences – Choose caregivers based on cultural, linguistic, or other personal preferences.</li>
-        </ul>
-        {/* <button className="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-secondary transition font-semibold text-lg">
-          Get Started
-        </button> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="flex flex-col items-center">
+            <FaClock className="text-4xl text-blue-500" />
+            <h3 className="text-lg font-semibold mt-2">24/7 Care</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaUserCheck className="text-4xl text-green-500" />
+            <h3 className="text-lg font-semibold mt-2">Certified Caretakers</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaHandsHelping className="text-4xl text-purple-500" />
+            <h3 className="text-lg font-semibold mt-2">Personalized Support</h3>
+          </div>
+        </div>
       </div>
       <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-        <img src={benefit_image} alt="Caregiver and patient" className="max-w-full h-auto " />
+        <img src={benefit_image} alt="Caregiver and patient" className="max-w-full h-auto" />
       </div>
     </div>
   );
