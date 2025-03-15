@@ -75,7 +75,7 @@ function Footer() {
               <div>
                 <h3 className="font-semibold text-heading/90 mb-2">Contact Us</h3>
                 <ul className="space-y-1 text-sm text-heading/70">
-                  <li>📍 Colaba, South Mumbai, India</li>
+                  <li>📍 Indian Institute of Technology, Kharagpur, India</li>
                   <li>📞 +91 63717 85118</li>
                   <li>✉️ support@nurturecare.com</li>
                 </ul>
