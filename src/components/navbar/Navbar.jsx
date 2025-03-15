@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo2.png"
+import logo from "../../assets/logo2.png";
 // Navigation links defined as an array of objects
 const navLinks = [
   { title: "Home", to: "/" },
@@ -8,8 +8,8 @@ const navLinks = [
     title: "About",
     to: "/about",
     dropdown: [
-      { title: "Our Team", to: "/about/team" },
-      { title: "Our Mission", to: "/about/mission" },
+      { title: "Our Team", to: "#team", isInPageLink: true },
+      { title: "Our Mission", to: "#mission", isInPageLink: true},
     ],
   },
   {
@@ -21,7 +21,7 @@ const navLinks = [
       { title: "Child Care", to: "/services/child-care" },
     ],
   },
-  { title: "Contact", to: "/contact" },
+  { title: "Career", to: "/career" },
 ];
 
 const Navbar = () => {
@@ -51,7 +51,8 @@ const Navbar = () => {
       <div className="container mx-auto pr-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-xl font-bold text-primary px-6 py-2">
-          <Link to="../../../assets/logo2.png"><img src={logo} alt="A beautiful scenery" width="60" height="60" />
+          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+            <img src={logo} alt="A beautiful scenery" width="60" height="60" />
           </Link>
         </div>
 
@@ -72,16 +73,25 @@ const Navbar = () => {
                   </button>
                   {openDropdown === index && (
                     <div className="absolute left-0 top-full mt-1 w-48 bg-white border border-gray-200 rounded shadow-md">
-                      {link.dropdown.map((sublink, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          to={sublink.to}
-                          onClick={() => setOpenDropdown(null)}
-                          className="block px-4 py-2 hover:bg-gray-100 transition-colors"
-                        >
-                          {sublink.title}
-                        </Link>
-                      ))}
+                      {link.dropdown.map((sublink, subIndex) =>
+                        sublink.isInPageLink ? (
+                          <a
+                            key={subIndex}
+                            href={sublink.to}
+                            onClick={() => setOpenDropdown(null)}
+                            className="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                          >{sublink.title}</a>
+                        ) : (
+                          <Link
+                            key={subIndex}
+                            to={sublink.to}
+                            onClick={() => setOpenDropdown(null)}
+                            className="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                          >
+                            {sublink.title}
+                          </Link>
+                        )
+                      )}
                     </div>
                   )}
                 </>

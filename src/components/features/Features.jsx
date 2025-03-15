@@ -10,12 +10,12 @@ const features = [
   },
   {
     title: "Affordable care",
-    description: "Average cost of care at $33/hour. Care available for as low as $25/hour.",
+    description: "Average cost of care at ₹20K/month. Care available for as low as ₹15K/month.",
     icon: "/placeholder-icon.png",
   },
   {
-    title: "Care ASAP",
-    description: "Depending on your needs, Nurture can get a caregiver in place in as little as 24 hours.",
+    title: "Visibility of parents' well-being.",
+    description: "Daily updates and real-time monitoring of parents' health and well-being.",
     icon: "/placeholder-icon.png",
   },
   {
@@ -24,7 +24,7 @@ const features = [
     icon: "/placeholder-icon.png",
   },
   {
-    title: "100% legal and insured",
+    title: "100% legal and insurance backing",
     description: "Nurture handles all the paperwork seamlessly with automated payroll and insurance.",
     icon: "/placeholder-icon.png",
   },

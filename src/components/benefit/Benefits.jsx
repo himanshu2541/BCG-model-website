@@ -1,42 +1,30 @@
 import React from "react";
-// Replace with your actual image import
-import WatercolorImage from "../../assets/elderly-person-wheelchair-caregiver.png";
-import StatCard from "./StatCard";
+import benefit_image from "../../assets/elderly-person-wheelchair-caregiver.png"; // Ensure the image is stored in the correct path
 
-function Benefits() {
+const Benefits = () => {
   return (
-    <section className="py-12 md:py-20 bg-white">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        {/* Text Content */}
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold  text-heading mb-4">
-            <p className="text-black">All the benefits of an agency, 40% lower cost.</p>
-            
-          </h2>
-          <p className="text-body mb-8 max-w-md">
-            Unlike agencies’ 50% markup, Nurture charges a low 15% fee for
-            full-service access.
-          </p>
-
-          {/* Stats */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
-            <StatCard value={<span className="text-black">780</span>} label="Caregivers" />
-            <StatCard value={<span className="text-black">7.7</span>} label="Avg H5 Exp" />
-            <StatCard value={<span className="text-black">$32.33</span>} label="Avg Cost" />
-          </div>
-        </div>
-
-        {/* Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
-          <img
-            src={WatercolorImage}
-            alt="Elderly person and caregiver in watercolor style"
-            className="max-w-full h-auto "
-          />
-        </div>
+    <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12 min-h-screen">
+      <div className="md:w-1/2 space-y-6">
+        <h2 className="text-heading text-4xl font-bold leading-tight">
+          Trained & Certified Caregivers, Personalized for You
+        </h2>
+        <p className="text-body text-lg">
+          Our caregivers are professionally trained and certified to provide top-quality in-home care.
+        </p>
+        <ul className="space-y-3 text-body text-sm">
+          <li>🔹 24/7 In-Home Care – Our primary service ensures round-the-clock support.</li>
+          <li>🔹 Personalized Plans – Clients can tailor their care plans to meet their specific needs.</li>
+          <li>🔹 Special Preferences – Choose caregivers based on cultural, linguistic, or other personal preferences.</li>
+        </ul>
+        {/* <button className="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-secondary transition font-semibold text-lg">
+          Get Started
+        </button> */}
       </div>
-    </section>
+      <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+        <img src={benefit_image} alt="Caregiver and patient" className="max-w-full h-auto " />
+      </div>
+    </div>
   );
-}
+};
 
 export default Benefits;

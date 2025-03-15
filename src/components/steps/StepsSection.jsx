@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 
 // Replace these images with your actual file imports or URLs
-import ImageStep1 from "/placeholder-icon.png";
-import ImageStep2 from "/avatar.jpg";
-import ImageStep3 from "/placeholder-icon.png";
+import ImageStep1 from "/341.png";
+import ImageStep2 from "/342.png";
+import ImageStep3 from "/343.png";
 
 const stepsData = [
   {
     id: 1,
-    title: "Find personalized care",
-    description: `Choose from our network of 750+ local caregivers 
-    with the help of our care experts to find the best 
-    care for your loved one's needs.`,
+    title: "Fill the Contact Form",
+    description: `Book your first free trial.`,
     image: ImageStep1,
   },
   {
     id: 2,
-    title: "Interview & hire",
+    title: "Care adviser contacts you within 24 hours",
     description: `Phone, virtual, or in-person visits available. 
     Discuss needs, schedules, and get comfortable 
     with the caregiver before hiring.`,
@@ -24,10 +22,8 @@ const stepsData = [
   },
   {
     id: 3,
-    title: "Receive care",
-    description: `Quality care can begin in as little as 24 hours. 
-    Enjoy peace of mind knowing your loved one 
-    is receiving top-notch support.`,
+    title: "Onboarding instructions & payment details",
+    description: `We match caregivers to clients by needs, culture, language and preferences.`,
     image: ImageStep3,
   },
 ];
@@ -53,7 +49,7 @@ function StepsSection() {
 
         <div className="flex flex-col md:flex-row md:space-x-8 gap-8">
           {/* Left side: Steps */}
-          <div className="md:w-1/2 mb-8 md:mb-0">
+          <div className="md:w-1/2 mb-8 md:mb-0 flex-2/3">
             {stepsData.map((step) => (
               <button
                 key={step.id}
@@ -103,7 +99,7 @@ function StepsSection() {
           {/* Right side: Image & full description */}
           <div className="flex flex-col items-center">
             {/* Image */}
-            <div className="w-full mb-6 h-96 md:h-96 overflow-clip rounded-md">
+            <div className="w-full mb-6 overflow-clip rounded-md">
               <img
                 src={currentStep.image}
                 alt={currentStep.title}

@@ -6,27 +6,24 @@ import Medical from "../../assets/medical.png"
 // Replace images and text with real data as needed.
 const caregivers = [
   {
-    name: "Basic Daily Support",
+    name: "Basic",
     experience: `Assistance with daily activities such as meal preparation, hygiene, mobility, and companionship.`,
     expertise: "For Elderly individuals who need help with routine tasks but are otherwise independent.",
-    languages: "Hindi, English, Regional Languages",
-    hourlyRate: "$32.50/hr",
+    hourlyRate: "₹15,000/month",
     image: Basicsupport
   },
   {
-    name: "Semi-Medical Care",
+    name: "Standard",
     experience: "Care for seniors needing regular health monitoring and basic medical assistance at home.",
     expertise: "For Elderly individuals with mild medical.",
-    languages: "English, Spanish",
-    hourlyRate: "$29.00/hr",
+    hourlyRate: "₹21,000/month",
     image: Specialized,
   },
   {
-    name: "Specialized Medical Support",
-    experience: "Professional in-home care for seniors with specific medical needs such as dementia, Alzheimer's, post-surgical recovery, or palliative care.",
-    expertise: "For Bedridden patients or elders with chronic illnesses needing specialized attention.",
-    languages: "English",
-    hourlyRate: "$30.00/hr",
+    name: "Specialized",
+    experience: "Professional in-home care for seniors with medical needs like dementia, Alzheimer's and post-surgery recovery.",
+    expertise: "Specialized support for bedridden elders and those with chronic illnesses.",
+    hourlyRate: "₹35,000/month",
     image: Medical,
   },
 
@@ -34,15 +31,15 @@ const caregivers = [
 
 function CaregiverShowcase() {
   return (
-    <section className="bg-[#0D0F1A] text-white py-12 md:py-20">
-      <div className="container mx-auto px-4">
+    <section className="bg-[#0D0F1A] text-white py-12 md:py-20 min-h-screen flex items-center justify-center">
+      <div className="container mx-auto px-4 max-w-[1200px]">
         {/* Small label above the heading */}
         <p className="text-sm uppercase tracking-widest text-center mb-2">
           Caregiver Segments
         </p>
 
         {/* Main heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 mt-8">
           Personalized Care Plan for Every Need!
         </h2>
 
@@ -52,14 +49,10 @@ function CaregiverShowcase() {
         </p>
 
         {/* Call-to-action button */}
-        <div className="text-center mb-10">
-          <button className="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 cursor-pointer">
-            Hire a caregiver
-          </button>
-        </div>
+        
 
         {/* Caregiver cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {caregivers.map((caregiver, index) => (
             <div
               key={index}
@@ -75,13 +68,18 @@ function CaregiverShowcase() {
               </h3>
               <p className="text-sm text-center text-body mb-2">{caregiver.experience}</p>
               <p className="text-sm text-center text-body mb-2">{caregiver.expertise}</p>
-              <p className="text-sm text-center text-body mb-2">{caregiver.languages}</p>
               <p className="text-sm font-bold">{caregiver.hourlyRate}</p>
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-10">
+          <a href="#contact-form" className="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 cursor-pointer">
+            Hire a caregiver
+          </a>
+        </div>
       </div>
-    </section>
+    </section>  
   );
 }
 

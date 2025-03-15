@@ -7,6 +7,9 @@ import Features from "../components/features/Features";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import StepsSection from "../components/steps/StepsSection";
 import Footer from "../components/footer/Footer";
+import Team from "../components/Team/Team";
+import CaregiverForm from "../components/caregiver form/CaregiverForm";
+import Mission from "../components/mission/Mission";
 
 const Home = () => {
   return (
@@ -25,6 +28,9 @@ const Home = () => {
       <MaxWidthWrapper>
         <StepsSection />
       </MaxWidthWrapper>
+      <Team />
+      <Mission />
+      <CaregiverForm />
       <Footer />
     </>
   );

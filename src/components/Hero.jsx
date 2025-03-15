@@ -3,11 +3,11 @@
 import React from "react";
 // import HeroImage from "../assets/hero-image.jpg"; 
 // Replace with your actual image
-import Home from "../assets/homepic2.jpeg"
+
 
 function Hero() {
   return (
-    <section className="bg-accent py-12 md:py-20">
+    <section className="bg-accent py-12 md:py-20 min-h-screen flex items-center justify-center"> 
       <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
 
         {/* Text Content */}
@@ -20,9 +20,9 @@ function Hero() {
             their ideal caregiver for an affordable price.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-gray-900 text-white px-6 py-3 font-bold rounded-md hover:bg-gray-7all00">
+            <a href="#contact-form" className="bg-gray-900 text-white px-6 py-3 font-bold rounded-md hover:bg-gray-7all00">
               Book Your Free Trial
-            </button>
+            </a>
             {/* <button className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-800">
               Apply for a care job
             </button> */}
@@ -30,12 +30,13 @@ function Hero() {
         </div>
 
         {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end image-wrapper">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end image-wrapper relative">
           <img
-            src={Home}
+            src={"/hero-image.jpg"}
             alt="Caregiver with elderly person"
             className="max-w-full h-auto"
           />
+          <div className="bottom-0 left-0 w-full h-1/2 absolute bg-gradient-to-b from-accent/0 to-accent/100 "/>
         </div>
       </div>
     </section>
